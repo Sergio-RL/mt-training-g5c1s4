@@ -1,0 +1,13 @@
+<div *ngIf="farm; else noSelected">
+<h4>SELECTED FARM</h4>
+
+  <h5>Farm Id: {{ farm?.Id }}</h5>
+  <h5>Farm FarmNo: {{ farm?.FarmNo }}</h5>
+  <h5>Farm FarmName: {{ farm?.FarmName }}</h5>
+  <h5>Farm ActiveDate: {{ farm?.ActiveDate }}</h5>
+  <h5>Farm Address: {{ farm?.Address }}</h5>
+</div>
+
+<ng-template #noSelected>
+<h2>SELECT A FARM</h2>
+</ng-template>
